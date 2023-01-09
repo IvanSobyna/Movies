@@ -28,6 +28,10 @@ title.addEventListener("click", () => {
     forms.classList.remove("active");
 })
 
+
+
+
+
 const menuButton = document.querySelector(".menu");
 const menuBody = document.querySelector(".menu-body");
 const closeButton = document.querySelector(".closeBtn");
@@ -44,4 +48,21 @@ closeButton.addEventListener("click", ()=> {
     menuBody.classList.remove("reveal");
     menuButton.classList.remove("hidden");
     body.classList.remove("lock");
+})
+
+const arrowRight = document.querySelector(".arrowRight");
+const arrowLeft = document.querySelector(".arrowLeft");
+const slideShow = document.querySelector(".slideShow");
+const slideInto2 = document.querySelector(".slideInto2");
+const slideInto = document.querySelector(".slideInto");
+
+arrowRight.addEventListener("click", () => {
+    // slideShow.classList.add("active");
+    slideInto2.classList.add("active");
+    slideInto.classList.add("active");
+})
+
+arrowLeft.addEventListener("click", () => {
+    slideInto2.classList.remove("active");
+    slideInto.classList.remove("active");
 })
