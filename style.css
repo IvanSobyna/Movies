@@ -247,7 +247,7 @@ nav.menu.hidden {
 }
 
 .secondLine{
-    background-image: url("img/Kino.jpg");
+    background-image: url("img/backgraund.png");
     width: 100%;
     background-size: 100%;
     height: 500px;
@@ -260,7 +260,7 @@ nav.menu.hidden {
     align-items: center;
     justify-content: center;
     font-size: 39px;
-    color: yellow;
+    color: white;
 }
 @media (max-width: 800px){
     .secondLine{
@@ -274,8 +274,8 @@ nav.menu.hidden {
       width: 200px;
       height: 100px;
   }
-    .content div p{
-        font-size: 1px;
+    .content div p {
+        font-size: 10px;
     }
     .tabs label{
         font-size: 5px;
@@ -290,7 +290,8 @@ nav.menu.hidden {
         background-size: 220%;
     }
     .tabs label{
-        width: 5%;
+        font-size: 1px;
+        display: none;
     }
     .menu-body{
         width: 100%;
@@ -300,6 +301,9 @@ nav.menu.hidden {
     }
     .container{
         right: 10%;
+    }
+    p{
+        font-size: 5px;
     }
 }
 .freeWatch{
@@ -587,4 +591,9 @@ p {
     align-items: center;
     justify-content: space-evenly;
 }
-
+.bottom{
+    display: flex;
+    justify-content: space-around;
+    background-color: #777777;
+    align-items: center;
+}
